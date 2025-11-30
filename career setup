@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author: Vikash rawat
+# Date: 30/11/2025
+# Purpose: Automate creation of career planning folder structure
+
+echo "Creating Career Planning Folder Structure..."
+
+mkdir -p Career_Planning
+mkdir -p Career_Planning/{Certifications,Resume,Projects,LinkedIn,Screenshots,Notes}
+
+touch Career_Planning/Resume/my_resume.txt
+touch Career_Planning/Notes/career_goals.txt
+touch Career_Planning/Certifications/list_of_certifications.txt
+
+echo "Career structure created on: $(date)" > Career_Planning/setup_log.txt
+
+echo "Career folder structure created successfully!"
+echo "---------------------------------------------"
+ls -R Career_Planning
